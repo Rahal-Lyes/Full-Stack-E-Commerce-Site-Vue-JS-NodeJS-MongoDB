@@ -26,6 +26,10 @@ const routes = [
     path: "/",
     redirect: "/products",
   },
+  {
+    path: "*",
+    component: () => import("../views/404Page.vue"),
+  },
 ];
 
 const router = new VueRouter({

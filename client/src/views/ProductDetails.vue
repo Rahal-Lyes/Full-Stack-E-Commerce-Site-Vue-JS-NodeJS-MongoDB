@@ -1,9 +1,14 @@
 <template>
-  <div class="container">
-    <h1>Product Details</h1>
-    <h2>{{ product.nom }}</h2>
-    <img :src="product.photo" :alt="product.nom" />
-    <p>{{ product.caracteristiques }}</p>
+  <div>
+    <div class="container" v-if="product">
+      <h1>Product Details</h1>
+      <h2>{{ product.nom }}</h2>
+      <img :src="product.photo" :alt="product.nom" />
+      <p>{{ product.caracteristiques }}</p>
+    </div>
+    <div v-else>
+      <h1>Page Not Founds</h1>
+    </div>
   </div>
 </template>
 <script>

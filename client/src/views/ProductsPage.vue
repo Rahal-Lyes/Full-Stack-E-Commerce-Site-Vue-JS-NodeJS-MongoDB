@@ -1,5 +1,6 @@
 <template>
   <div class="products">
+    <div class="fixed"></div>
     <h1>All Products</h1>
     <container-view>
       <card-view
@@ -39,5 +40,9 @@ export default {
 h1 {
   text-align: center;
   margin-bottom: 20px;
+}
+
+.fixed {
+  height: 60px;
 }
 </style>
